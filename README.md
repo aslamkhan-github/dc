@@ -82,6 +82,4 @@ RUN_SYSPU=`crm_mon -1 |grep syspu_vip |awk '{print $4}'`
     echo "Please collect the data from Other Manager" | tee -a /dev/tty |grep bar
  fi
 
-#/bin/rm /tmp/SW_data_collection_service-VSPP-6.RHEL6.6.iso
-#/bin/rm /tmp/SW_data_collection_service-VSPP-*
 echo "Script Ended `date`" >> /root/dc_upgrade_log.txt
